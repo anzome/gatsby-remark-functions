@@ -1,0 +1,23 @@
+{
+    "name": "gatsby-remark-function",
+    "version": "0.0.1",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "lint": "eslint --color --max-warnings 0"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "2.19.0",
+        "@typescript-eslint/parser": "2.19.0",
+        "eslint": "6.8.0",
+        "eslint-config-prettier": "6.10.0",
+        "gatsby-transformer-remark": "^2.6.50",
+        "husky": "4.2.1",
+        "lint-staged": "10.0.7",
+        "prettier": "1.19.1",
+        "react-dom": "^16.12.0"
+    },
+    "peerDependencies": {
+        "gatsby-transformer-remark": "^2.6.50"
+    }
+}
