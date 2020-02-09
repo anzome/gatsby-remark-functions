@@ -6,6 +6,18 @@
     "scripts": {
         "lint": "eslint --color --max-warnings 0"
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.(js|jsx|ts|tsx)": [
+            "yarn lint",
+            "yarn prettier --check",
+            "git add"
+        ]
+    },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "2.19.0",
         "@typescript-eslint/parser": "2.19.0",
